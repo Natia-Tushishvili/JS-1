@@ -9,13 +9,13 @@
     დალოგეთ ზემოაღნიშნული ცვლადი . 
 */
 
-var sistername = 'ანა';
-var sisterage = 28;
-var brothername = 'ლევანი';
-var brotherage = 21;
+let sistername = 'ანა';
+let sisterage = 28;
+let brothername = 'ლევანი';
+let brotherage = 21;
 console.log(sisterage - brotherage)
 
-var text = sistername + " " + brothername + "ზე" + " " + (sisterage - brotherage) + " " + "წლით უფროსია";
+let text = sistername + " " + brothername + "ზე" + " " + (sisterage - brotherage) + " " + "წლით უფროსია";
 console.log(text)
 
 
@@ -26,7 +26,7 @@ console.log(text)
 
 */
 
-var students = ['John', 'Sam', 'Ann', 'Will', 'Andrew', 'Joseph', 'Lorelai', 'Amelie', 'Den']
+let students = ['John', 'Sam', 'Ann', 'Will', 'Andrew', 'Joseph', 'Lorelai', 'Amelie', 'Den']
 console.log(students[4])
 
 
@@ -54,7 +54,6 @@ console.log(students[4])
 let student = {
     firstName: 'ნათია',
     lastName: 'თუშიშვილი',
-    fullname: 'ნათია თუშიშვილი',
     age: 26,
     subject: ['მათემატიკა', 'ფიზიკა', 'ბიოლოგია', 'ქიმია', 'ისტორია', 'გეოგრაფია', 'ინგლისური'],
     roommate: {
@@ -62,9 +61,13 @@ let student = {
         age: 28
     }
 }
+let studentfullName = student.firstName + '  ' + student.lastName
+student.sruliSaxeli = studentfullName
+console.log(studentfullName)
+
 for (let i = 0; i < student.subject.length; i++)
     console.log(student.subject[i])
-var result = student.fullname + " " + "არის" + " " + student.age + " " + "წლის და მისი რუმმეითი არის" + " " + student.roommate.fullName;
+let result = student.fullname + " " + "არის" + " " + student.age + " " + "წლის და მისი რუმმეითი არის" + " " + student.roommate.fullName;
 console.log(result)
 
 
@@ -76,7 +79,7 @@ console.log(result)
 
 */
 
-var fruitsArray = ["Banana", "Orange", "Apple", "Mango", 2, 12]
+let fruitsArray = ["Banana", "Orange", "Apple", "Mango", 2, 12]
 let i = 0;
 while (i < fruitsArray.length && typeof fruitsArray[i] === "string") {
     console.log(fruitsArray[i])
